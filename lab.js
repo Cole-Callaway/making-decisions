@@ -27,8 +27,8 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-if (amysAge = 29 <= brittanisAge) {
-  
+if (amysAge <= brittanisAge) {
+  console.log('Brittani is older')
 }
 
 ////////// PROBLEM 3 //////////
@@ -38,7 +38,11 @@ if (amysAge = 29 <= brittanisAge) {
 */
 
 //CODE HERE
-
+if (amysBirthYear <= brittanisBirthYear) {
+  console.log('Amy & Brittani were born in the same year')
+} else {
+  console.log("Amy & Brittani were not born in the same year")
+}
 
 ////////// PROBLEM 4 //////////
 
