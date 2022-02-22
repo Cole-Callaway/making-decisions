@@ -54,20 +54,16 @@ let rain = true
 */
 
 //CODE HERE
-if (temperature + 25 >= 80) {
+if (temperature + 25 >= 80 && rain === true) {
   console.log("t-shirt and take an umbrella")
-} else if(rain) {
-  console.log('Bring an umbrella')
 } 
 
-if (temperature + 5 <= 80) {
+if (temperature + 5 <= 80 && rain === true) {
   console.log("wear a rain-jacket")
 } 
 
-if (temperature > 50) {
-  console.log('wear some gloves')
-} else if (rain === false){
-  console.log('at least is not raining')
+if (temperature > 50 && rain > false) {
+  console.log('wear some gloves but, at least its not raining')
 }
 ////////// PROBLEM 5 //////////
 
@@ -76,7 +72,15 @@ if (temperature > 50) {
 */
 
 //CODE HERE
+let x =0 
+while (x < 10) {
+  console.log('hello')
+  x += 1
+}
 
+// for (let i = 0; i < 10; i++) {
+//   console.log("hello"[i])
+// }
 
 ////////// PROBLEM 6 //////////
 
@@ -85,14 +89,18 @@ if (temperature > 50) {
 */
 
 //CODE HERE
-
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
 
 ////////// PROBLEM 7 //////////
 
 /*
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
-
+for (let i = 10; i > -1; i--){
+  console.log(i)
+}
 //CODE HERE
 
 let score = 0
@@ -105,7 +113,12 @@ let passingScore = 7
 */
 
 //CODE HERE
-
+while (score < 7) {
+  console.log('"Your score is not high enough')
+  score += 1 
+} if (score === 7) {
+  console.log ('score is high enough')
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -116,7 +129,11 @@ let passingScore = 7
 */
 
 //CODE HERE
+var changeMyMind = true
 
+if (changeMyMind) {
+  console.log('')
+}
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
